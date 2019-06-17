@@ -85,7 +85,8 @@ export const COURSES: any = {
     id: 6,
     titles: {
       description: 'Angular Security Course - Web Security Fundamentals',
-      longDescription: 'Learn Web Security Fundamentals and apply them to defend an Angular / Node Application from multiple types of attacks.'
+      longDescription:
+        'Learn Web Security Fundamentals and apply them to defend an Angular / Node Application from multiple types of attacks.'
     },
     iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/security-cover-small-v2.png',
     courseListIcon: 'https://s3-us-west-1.amazonaws.com/angular-university/course-images/lock-v2.png',
@@ -113,7 +114,8 @@ export const COURSES: any = {
     id: 8,
     titles: {
       description: 'Angular Advanced Library Laboratory: Build Your Own Library',
-      longDescription: 'Learn Advanced Angular functionality typically used in Library Development. Advanced Components, Directives, Testing, Npm'
+      longDescription:
+        'Learn Advanced Angular functionality typically used in Library Development. Advanced Components, Directives, Testing, Npm'
     },
     iconUrl: 'https://angular-academy.s3.amazonaws.com/thumbnails/advanced_angular-small-v3.png',
     courseListIcon: 'https://angular-academy.s3.amazonaws.com/thumbnails/angular-advanced-lesson-icon.png',
@@ -139,7 +141,8 @@ export const COURSES: any = {
     id: 10,
     titles: {
       description: 'Rxjs and Reactive Patterns Angular Architecture Course',
-      longDescription: 'Learn the core RxJs Observable Pattern as well and many other Design Patterns for building Reactive Angular Applications.'
+      longDescription:
+        'Learn the core RxJs Observable Pattern as well and many other Design Patterns for building Reactive Angular Applications.'
     },
     iconUrl: 'https://s3-us-west-1.amazonaws.com/angular-academy/blog/images/rxjs-reactive-patterns-small.png',
     courseListIcon: 'https://angular-academy.s3.amazonaws.com/course-logos/observables_rxjs.png',
@@ -557,5 +560,5 @@ export function findCourseById(courseId: number) {
 }
 
 export function findLessonsForCourse(courseId: number) {
-  return Object.values(LESSONS).filter(lesson => lesson.courseId == courseId);
+  return Object.values(LESSONS).filter(lesson => lesson.courseId === courseId);
 }
